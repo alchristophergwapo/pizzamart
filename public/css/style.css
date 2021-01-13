@@ -1,0 +1,85 @@
+html,
+body {
+    overflow-x: hidden;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.content {
+    width: 70%;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+}
+
+.account-form {
+    background-image: linear-gradient(to top, rgba(233, 100, 67, 0.4), rgba(144, 78, 149, 0.4)), url('/images/banner.jpg')!important;
+    background-position: center!important;
+    background-size: cover!important;
+    background-attachment: fixed!important;
+    background-repeat: no-repeat!important;
+    height: 100%!important;
+}
+
+.my_message {
+    width: 30%;
+    right: auto;
+    left: auto;
+}
+
+.underlined {
+    text-decoration: none;
+    margin-right: 10px;
+    display: inline-block;
+    padding: 5px;
+    position: relative;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.underlined:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: tomato;
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+    transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+}
+
+.underlined:hover {
+    color: tomato;
+}
+
+.underlined:hover:after {
+    width: 100%;
+}
+
+.banner-text {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 10px;
+}
+
+.cart-header {
+    float: left;
+    width: 50%;
+}
